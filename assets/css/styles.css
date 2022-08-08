@@ -31,3 +31,72 @@ body {
 .header__logo {
   width: 40px;
 }
+
+.sidebar {
+  display: flex;
+  flex-direction: column;
+  background-color: #15191C;
+  width: 75vw;
+  height: 100vh;
+  position: absolute;
+  left: -100vw;
+  transition: left 0.25s;
+}
+
+.sidebar--active {
+  left: 0;
+  transition: left 0.25s;
+}
+
+.sidebar__logo {
+  align-self: center;
+  width: 118px;
+  margin-bottom: 34px;
+}
+
+.sidebar__link {
+  height: 64px;
+  color: #95999C;
+  padding-left: 64px;
+  display: flex;
+  align-items: center;
+}
+
+.sidebar__link--active {
+  color: #FFFFFF;
+  padding-left: 56px;
+  border-left: 8px solid #FFFFFF;
+}
+
+.sidebar__link::before {
+  content: "";
+  width: 24px;
+  height: 24px;
+  font-size: 24px;
+  position: absolute;
+  left: 24px;
+}
+
+.sidebar__link--inicio::before {
+  content: "\e902";
+}
+
+.sidebar__link--videos::before {
+  content: "\e90e";
+}
+
+.sidebar__link--picos::before {
+  content: "\e909";
+}
+
+.sidebar__link--integrantes::before {
+  content: "\e903";
+}
+
+.sidebar__link--camisas::before {
+  content: "\e900";
+}
+
+.sidebar__link--pinturas::before {
+  content: "\e90a";
+}
